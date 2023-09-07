@@ -61,29 +61,10 @@ if (
   all += specialChar;
 }
 
+var pw = "";
+for (var i = 0; i < length; i++) {
+  pw += all.charAt(Math.floor(Math.random() * all.length));
 }
-// function generatePassword() {
-//   // if (len < 8 || len > 128) {
-//   //   alert("Choose a length between 8 to 128");
-//   //   return null;
-//   // }
-// }
+return pw;
 
-// function codeX () {
-//   var x = prompt("LENGTH")
-//   if (x > 8) {
-//   console.log(x)
-// } else {
-//   alert("Length must be greater than 8")
-//   return null;
-// }
-
-// if(upperCase) {
-//   console.log(upperCase)
-// }
-// }
-
-// codeX()
-
-//when prompted
-//Then I confirm
+}
