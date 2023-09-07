@@ -20,21 +20,27 @@ generateBtn.addEventListener("click", writePassword);
 
 
 function generatePassword() {
-  var all = "";  // All possible character variables availables for input
+  var all = ""; 
 
-  // Create a variable named "length" and assign value for input, convert to integer using parseInt().
-  var length = parseInt(window.prompt("Pick a numerical password length from 8-128."));
+  var length = parseInt(window.prompt("Pick a password length from 8-128."));
 
-  // If input is less 8 or more than 128 show an error message prompt user to enter proper numercial value
-  // if an error is produced again reset and return "undefined"
   if (length < 8 || length > 128) {
-    alert("Error: Please enter a password length between 8 - 128 characters.");
-    var input = window.prompt("Please enter a numerical password length between 8-128 characters: ");
+    alert("Error: Please choose a password length between 8 - 128 characters.");
+    var input = window.prompt("Please enter a password length between 8-128 characters: ");
     length = parseInt(input);
     if (length < 8 || length > 128) {
-        return alert("Error: Invalid input, please try again");
+        return alert("Error: Please try again");
     }
 }
+
+// Confirming to include lowercase
+if (
+  window.confirm("Do you want your password to include lowercase letters?")
+) {
+  all += lowerCase;
+}
+
+
 
 }
 // function generatePassword() {
