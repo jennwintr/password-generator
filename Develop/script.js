@@ -44,10 +44,22 @@ if (
 if (
   window.confirm("Do you want your password to include uppercase letters?")
 ) {
-  all =+ upperCase
+  all += upperCase
 }
 
-// Confirmining to inlcude numbers
+// Confirming to inlcude numbers
+if (
+  window.confirm("Do you want your password to include numbers?")
+) {
+  all += num;
+}
+
+// Confirming to include special characters
+if (
+  window.confirm("Do you want your password to include special characters?")
+) {
+  all += specialChar;
+}
 
 }
 // function generatePassword() {
