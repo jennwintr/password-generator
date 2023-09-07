@@ -40,7 +40,14 @@ if (
   all += lowerCase;
 }
 
+// Confirming to include uppercase
+if (
+  window.confirm("Do you want your password to include uppercase letters?")
+) {
+  all =+ upperCase
+}
 
+// Confirmining to inlcude numbers
 
 }
 // function generatePassword() {
