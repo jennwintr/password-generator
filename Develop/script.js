@@ -22,13 +22,13 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   let all = ""; 
 
-  let len = parseInt(window.prompt("Pick a password length from 8-128."));
+  let length = parseInt(window.prompt("Pick a password length from 8-128."));
 
-  if (len < 8 || len > 128) {
+  if (length < 8 || length > 128) {
     alert("Error: Please choose a password length between 8-128 characters.");
     let input = window.prompt("Please enter a password length between 8-128 characters: ");
     length = parseInt(input);
-    if (len < 8 || len > 128) {
+    if (length < 8 || length > 128) {
         return alert("Error: Please try again");
     }
 }
@@ -44,7 +44,7 @@ if (
 if (
   window.confirm("Do you want your password to include uppercase letters?")
 ) {
-  all += upperCase
+  all += upperCase;
 }
 
 // Confirming to inlcude numbers
@@ -61,10 +61,10 @@ if (
   all += specialChar;
 }
 
-let pw = "";
-for (var i = 0; i < length; i++) {
-  pw += all.charAt(Math.floor(Math.random() * all.length));
+let allPw = "";
+for (let i = 0; i < length; i++) {
+  allPw += all.charAt(Math.floor(Math.random() * all.length));
 }
-return pw;
+return allPw;
 
 }
