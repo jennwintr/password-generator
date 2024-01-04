@@ -26,3 +26,6 @@ GitHub URL:
 
 Deployed URL:
 [https://jennwintr.github.io/password-generator/](https://jennwintr.github.io/password-generator/)
+
+Demo Video:
+[https://drive.google.com/file/d/1EplCcMig5BImHwjBVzmD0ACeJlPjbHo5/view](https://drive.google.com/file/d/1EplCcMig5BImHwjBVzmD0ACeJlPjbHo5/view)
